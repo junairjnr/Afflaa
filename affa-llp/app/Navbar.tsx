@@ -75,7 +75,7 @@ export default function Navbar() {
                   className="w-full p-1 flex pl-4 items-center gap-3 cursor-pointer  hover:bg-gray-50 text-base "
                 >
                   <MdLogout size={25} />
-                  Logout 
+                  Logout
                 </button>
               </Link>
             </div>
