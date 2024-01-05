@@ -1,10 +1,10 @@
 import Footer from "@/app/Footer";
-import Navbar from "@/app/Navbar"
+import Navbar from "@/app/Navbar";
 
 export default function EditAccount() {
   return (
     <div className="w-full h-screen">
-			<Navbar />
+      <Navbar />
       <div className="w-full h-full p-4 bg-gray-300 pt-[50px] ">
         <div className="flex justify-center items-center flex-col ">
           <p className="text-2xl font-bold pt-2">Edit Account</p>
@@ -17,7 +17,7 @@ export default function EditAccount() {
                     name="header"
                     id="header"
                     // onChange={handleChange}
-                    className="w-full min-h-[100px] outline-none p-2 rounded-md"
+                    className="w-full  outline-none p-2 rounded-md"
                   >
                     {/* {values.header} */}
                   </textarea>
@@ -28,21 +28,47 @@ export default function EditAccount() {
                     name="header"
                     id="header"
                     // onChange={handleChange}
-                    className="w-full min-h-[100px] outline-none p-2 rounded-md"
+                    className="w-full  outline-none p-2 rounded-md"
                   >
                     {/* {values.header} */}
                   </textarea>
                 </div>
-                <div className="w-[350px] flex flex-col p-2 gap-2">
-                  <p className="text-lg">Bank Account :</p>
-                  <textarea
+                <p className="text-lg font-bold">Bank Account :</p>
+                <div className="w-[350px] flex flex-row  items-center p-2 gap-2">
+                  <p className="text-center w-[100px]">A/C Holder:</p>
+                  <input
                     name="header"
                     id="header"
                     // onChange={handleChange}
-                    className="w-full min-h-[100px] outline-none p-2 rounded-md"
-                  >
-                    {/* {values.header} */}
-                  </textarea>
+                    className=" outline-none p-1 rounded-md pl-2"
+                  />
+                </div>
+                <div className="w-[350px] flex flex-row  items-center p-2 gap-2">
+                  <p className="text-center w-[100px]">A/C No:</p>
+                  <input
+                    name="header"
+                    id="header"
+                    // onChange={handleChange}
+                    className=" outline-none p-1 rounded-md pl-2"
+                  />
+                </div>
+                <div className="w-[350px] flex flex-row  items-center p-2 gap-2">
+                  <p className="text-center w-[100px]">Ifsc</p>
+                  <input
+                    name="header"
+                    id="header"
+                    // onChange={handleChange}
+                    className=" outline-none p-1 rounded-md pl-2"
+                  />
+                </div>
+                <div className="w-[350px] flex flex-row  items-center p-2 gap-2">
+                  <p className="text-center w-[100px]">Branch</p>
+                  <input
+                    name="header"
+                    id="header"
+                    // onChange={handleChange}
+                    className=" outline-none p-1 rounded-md pl-2"
+                  />
                 </div>
                 <div className="w-full h-auto flex justify-center mt-2 items-end">
                   <button className="w-[100px] h-[40px] bg-gray-700 text-white rounded-lg hover:bg-blue-50 cursor-pointer ">
@@ -54,7 +80,7 @@ export default function EditAccount() {
           </div>
         </div>
       </div>
-			<Footer />
+      <Footer />
     </div>
   );
 }

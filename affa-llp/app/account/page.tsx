@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function Account() {
   return (
     <div className="w-full h-auto ">
-			<Navbar />
+      <Navbar />
       <div className="w-full h-auto flex justify-center items-center flex-col pt-[50px]">
         <div className="w-[350px] h-[100px] p-2">
           <div className="w-full h-full bg-gradient-to-r from-green-700 to-cyan-700 flex flex-row justify-center items-center rounded-md">
@@ -43,37 +43,41 @@ export default function Account() {
                     </p>
                   </div>
                   <div className="flex flex-col p-3">
-                    <p className=" pr-2 font-semibold">
-                      Permanent Address :-
-                    </p>
+                    <p className=" pr-2 font-semibold">Permanent Address :-</p>
                     <p className=" pl-2 text-[14px] pt-2 text-center">
                       Datastone Solutions LLP Room #KM IV 828,829 - 2nd Floor
                       Smart Trade City,, Kottakkal, Malappuram, Kerala 676503
                     </p>
                   </div>
                   <div className="flex flex-col p-3">
-                    <p className=" pr-2 font-semibold">
-                      Bank Account :-
+                    <p className=" pr-2 font-semibold">Bank Account :-</p>
+                    <p className=" pl-2 w-[150px] text-[14px] pt-2 text-start">
+                      A/C Holder : JUnair
                     </p>
-                    <p className=" pl-2 text-[14px] pt-2 text-center">
-                      Datastone Solutions LLP Room #KM IV 828,829 - 2nd Floor
-                      Smart Trade City,, Kottakkal, Malappuram, Kerala 676503
+                    <p className=" pl-2 w-[150px] text-[14px] pt-2 text-start">
+                      A/C Number : JUnair
+                    </p>
+                    <p className=" pl-2 w-[150px] text-[14px] pt-2 text-start">
+                     Ifsc : JUnair
+                    </p>
+                    <p className=" pl-2 w-[150px] text-[14px] pt-2 text-start">
+                      Branch : JUnair
                     </p>
                   </div>
                 </div>
               </div>
               <div className="w-full h-auto flex justify-end items-end pr-2">
-								<Link href={"/account/edit"}>
-                <button className="w-[80px] h-[40px] bg-cyan-800 rounded-md text-white underline cursor-pointer shadow-lg">
-                  Edit
-                </button>
-								</Link>
+                <Link href={"/account/edit"}>
+                  <button className="w-[80px] h-[40px] bg-cyan-800 rounded-md text-white underline cursor-pointer shadow-lg">
+                    Edit
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
         </div>
       </div>
-			<Footer />
+      <Footer />
     </div>
   );
 }

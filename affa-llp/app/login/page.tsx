@@ -91,7 +91,7 @@ export default function Logion() {
           </div>
           <div className="w-full h-auto flex justify-center items-center mb-[100px]">
             {/* <Image alt="" src={secure} height={80} width={80} /> */}
-            <p className="text-sm">Version 1.0</p>
+            <p className="text-sm">Version 1.04</p>
           </div>
           <div className="w-full h-[100px] flex justify-center items-center text-white">
             {/* <p className="mb-[40px] text-center text-sm">

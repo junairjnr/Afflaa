@@ -9,7 +9,7 @@ export default function Dashboard() {
     <div className="w-full h-screen bg-white">
       <Navbar />
       <div className="w-full h-full flex justify-center items-start p-3 pt-[50px]">
-        <div className="w-full  flex justify-center items-center flex-col p-5">
+        <div className="w-full  flex justify-center items-center flex-col p-2">
           {/* <Debug data={values} /> */}
           <div className="w-full h-full bg-gradient-to-b from-gray-100 to-green-100 flex justify-start items-center flex-col p-2 rounded-md">
             <div className="w-full h-full flex justify-center items-center flex-col p-2 rounded-md border border-slate-500">
@@ -27,8 +27,21 @@ export default function Dashboard() {
               <form
               // onSubmit={handleSubmit}
               >
+                <div className="h-[50px] w-full flex flex-row justify-center items-center gap-3 p-2">
+                  <p className=" font-semibold text-gray-600 h-full text-center flex justify-center items-center">
+                    Date
+                  </p>
+                  :
+                  <input
+                    // value={values.itemCode}
+                    type="date"
+                    name="itemCode"
+                    className="outline-none pl-3 rounded-md w-[200px] h-full"
+                    // onChange={handleChange}
+                  />
+                </div>
                 <div className="h-[50px] w-full flex flex-row justify-center items-center gap-3 p-2 mt-4">
-                  <p className="w-[160px] font-semibold text-gray-600 h-full text-center flex justify-center items-center">
+                  <p className=" font-semibold text-gray-600 h-full text-center flex justify-center items-center">
                     Trader
                   </p>
                   :
@@ -36,13 +49,13 @@ export default function Dashboard() {
                     name="itemGroupId"
                     // value={values.itemGroupId}
                     // onChange={handleChange}
-                    className="outline-none pl-3 text-sm rounded-md w-full h-full"
+                    className="outline-none pl-3 text-sm rounded-md w-[200px] h-full"
                     required
                   >
-                    <option>select Trader</option>
-                    <option>select Trader</option>
-                    <option>select Trader</option>
-                    <option>select Trader</option>
+                    <option>select Trader 1</option>
+                    <option>select Trader 2</option>
+                    <option>select Trader 3</option>
+                    <option>select Trader </option>
                     {/* {itemGroup?.map((x: any, index: number) => (
                   <option key={index} value={x.id}>
                     {x.itemGroupName}
@@ -51,7 +64,7 @@ export default function Dashboard() {
                   </select>
                 </div>
                 <div className="h-[50px] w-full flex flex-row justify-center items-center gap-3 p-2">
-                  <p className="w-[160px] font-semibold text-gray-600 h-full text-center flex justify-center items-center">
+                  <p className=" font-semibold text-gray-600 h-full text-center flex justify-center items-center">
                     Amount
                   </p>
                   :
@@ -59,9 +72,14 @@ export default function Dashboard() {
                     // value={values.itemCode}
                     type="text"
                     name="itemCode"
-                    className="outline-none pl-3 rounded-md w-full h-full"
+                    className="outline-none pl-3 rounded-md w-[200px] h-full"
                     // onChange={handleChange}
                   />
+                </div>
+                <div className="w-full h-auto flex flex-col justify-center items-start p-2">
+                  <p className="text-red-700 font-semibold">Note : starts with 2000/-</p>
+                  <p className="text-red-700 font-semibold">Remark : starts with 2000/-</p>
+                  
                 </div>
                 <div className="h-[50px] w-full flex justify-center items-center m-2">
                   <button

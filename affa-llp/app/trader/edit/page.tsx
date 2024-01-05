@@ -129,6 +129,20 @@ export default function CreateTrader() {
                 </div>
                 <div className="h-[50px] w-full flex flex-row justify-center items-center gap-3 p-2">
                   <p className="w-[150px] font-semibold text-gray-600 h-full ">
+                    Password
+                  </p>
+                  :
+                  <input
+                    type="text"
+                    name="ledgerCode"
+                    className="outline-none pl-3 rounded-md w-full h-full"
+                    // value={values.ledgerCode}
+                    // onChange={handleChange}
+                    required
+                  />
+                </div>
+                <div className="h-[50px] w-full flex flex-row justify-center items-center gap-3 p-2">
+                  <p className="w-[150px] font-semibold text-gray-600 h-full ">
                     Mobile
                   </p>
                   :

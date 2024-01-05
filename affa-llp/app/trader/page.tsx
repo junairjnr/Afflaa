@@ -21,12 +21,63 @@ export default function Traders() {
             <table className="border-2  text-center shadow-md">
               <thead className="border">
                 <tr>
-                  <th className=" w-[25px] border">sl</th>
+                  <th className=" w-[25px] border">Sl</th>
                   <th className=" border">Name</th>
                   <th className=" border">Scheme</th>
                 </tr>
               </thead>
               <tbody className="text-center text-[14px]">
+                <tr>
+                  <td className="border">1</td>
+                  <td className="border w-[100px]">Mohammed Junair junu</td>
+                  <td className="border">
+                    Affa handleIncrement Affa handleIncrement
+                  </td>
+                  <td className="flex flex-col gap-1 justify-center items-center p-1 border">
+                    <Link href={"/trader/edit"}>
+                      <button className="h-[30px] w-[50px] bg-green-500 text-white text-center flex justify-center items-center rounded-md cursor-pointer ">
+                        Edit
+                      </button>
+                    </Link>
+                    <button className="h-[30px] w-[60px] bg-red-500 text-white text-center flex justify-center items-center rounded-md cursor-pointer ">
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="border">1</td>
+                  <td className="border w-[100px]">Mohammed Junair junu</td>
+                  <td className="border">
+                    Affa handleIncrement Affa handleIncrement
+                  </td>
+                  <td className="flex flex-col gap-1 justify-center items-center p-1 border">
+                    <Link href={"/trader/edit"}>
+                      <button className="h-[30px] w-[50px] bg-green-500 text-white text-center flex justify-center items-center rounded-md cursor-pointer ">
+                        Edit
+                      </button>
+                    </Link>
+                    <button className="h-[30px] w-[60px] bg-red-500 text-white text-center flex justify-center items-center rounded-md cursor-pointer ">
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="border">1</td>
+                  <td className="border w-[100px]">Mohammed Junair junu</td>
+                  <td className="border">
+                    Affa handleIncrement Affa handleIncrement
+                  </td>
+                  <td className="flex flex-col gap-1 justify-center items-center p-1 border">
+                    <Link href={"/trader/edit"}>
+                      <button className="h-[30px] w-[50px] bg-green-500 text-white text-center flex justify-center items-center rounded-md cursor-pointer ">
+                        Edit
+                      </button>
+                    </Link>
+                    <button className="h-[30px] w-[60px] bg-red-500 text-white text-center flex justify-center items-center rounded-md cursor-pointer ">
+                      Delete
+                    </button>
+                  </td>
+                </tr>
                 <tr>
                   <td className="border">1</td>
                   <td className="border w-[100px]">Mohammed Junair junu</td>

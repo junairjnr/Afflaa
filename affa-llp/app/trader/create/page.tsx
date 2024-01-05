@@ -129,6 +129,20 @@ export default function CreateTrader() {
                 </div>
                 <div className="h-[50px] w-full flex flex-row justify-center items-center gap-3 p-2">
                   <p className="w-[150px] font-semibold text-gray-600 h-full ">
+                    Password
+                  </p>
+                  :
+                  <input
+                    type="text"
+                    name="ledgerCode"
+                    className="outline-none pl-3 rounded-md w-full h-full"
+                    // value={values.ledgerCode}
+                    // onChange={handleChange}
+                    required
+                  />
+                </div>
+                <div className="h-[50px] w-full flex flex-row justify-center items-center gap-3 p-2">
+                  <p className="w-[150px] font-semibold text-gray-600 h-full ">
                     Mobile
                   </p>
                   :
@@ -169,7 +183,7 @@ export default function CreateTrader() {
                     {/* {values.header} */}
                   </textarea>
                 </div>
-                <div className="h-[50px] w-full flex flex-row justify-center items-center gap-3 p-2">
+                {/* <div className="h-[50px] w-full flex flex-row justify-center items-center gap-3 p-2">
                   <p className="w-[150px] font-semibold text-gray-600 h-full ">
                     Bank
                   </p>
@@ -177,12 +191,69 @@ export default function CreateTrader() {
                   <textarea
                     name="header"
                     id="header"
-                    // onChange={handleChange}
+                    onChange={handleChange}
                     className="outline-none pl-3 rounded-md w-full h-full"
                   >
-                    {/* {values.header} */}
+                    {values.header}
                   </textarea>
+                </div> */}
+                <div className="h-[50px] w-full flex flex-row justify-center items-center gap-3 p-2">
+                  <p className="w-[150px] font-semibold text-gray-600 h-full ">
+                    Bank A/C
+                  </p>
+                  :
+                  <input
+                    // value={values.mobile}
+                    type="text"
+                    name="mobile"
+                    className="outline-none pl-3 rounded-md w-full h-full"
+                    // onChange={handleChange}
+                    required
+                  />
                 </div>
+                <div className="h-[50px] w-full flex flex-row justify-center items-center gap-3 p-2">
+                  <p className="w-[150px] font-semibold text-gray-600 h-full ">
+                    A/c Holder
+                  </p>
+                  :
+                  <input
+                    // value={values.mobile}
+                    type="text"
+                    name="mobile"
+                    className="outline-none pl-3 rounded-md w-full h-full"
+                    // onChange={handleChange}
+                    required
+                  />
+                </div>
+                <div className="h-[50px] w-full flex flex-row justify-center items-center gap-3 p-2">
+                  <p className="w-[150px] font-semibold text-gray-600 h-full ">
+                    Ifsc
+                  </p>
+                  :
+                  <input
+                    // value={values.mobile}
+                    type="text"
+                    name="mobile"
+                    className="outline-none pl-3 rounded-md w-full h-full"
+                    // onChange={handleChange}
+                    required
+                  />
+                </div>
+                <div className="h-[50px] w-full flex flex-row justify-center items-center gap-3 p-2">
+                  <p className="w-[150px] font-semibold text-gray-600 h-full ">
+                    Branch
+                  </p>
+                  :
+                  <input
+                    // value={values.mobile}
+                    type="text"
+                    name="mobile"
+                    className="outline-none pl-3 rounded-md w-full h-full"
+                    // onChange={handleChange}
+                    required
+                  />
+                </div>
+
                 <div className="h-[50px] w-full flex flex-row justify-center items-center gap-3 p-2">
                   <p className="w-[150px] font-semibold text-gray-600 h-full ">
                     Scheme

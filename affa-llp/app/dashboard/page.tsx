@@ -3,6 +3,9 @@ import Footer from "../Footer";
 import Navbar from "../Navbar";
 
 export default function Dashboard() {
+  const number = 1234567;
+  const lastFourDigits = String(number).slice(-4); // Get the last four digits
+  const hiddenNumber = `***${lastFourDigits}`;
   return (
     // <div className="w-full h-screen bg-gradient-to-b from-green-900 to-green-900">
     <div className="w-full h-screen bg-white">
@@ -15,22 +18,22 @@ export default function Dashboard() {
                 <p className="p-1 text-white text-center font-semibold">
                   Hi,SHIHAN
                 </p>
-                <p className="p-1 text-white text-center text-sm font-serif">
+                <p className="p-1 text-white text-center text-sm font-sans">
                   Curent Value
                 </p>
                 <p className="p-1 text-white text-center text-2xl font-semibold">
-                  1.00.000
+                  1,00,000
                 </p>
               </div>
               <div className="w-[50%] h-full flex justify-center items-center flex-col">
                 <p className="p-1 text-white text-center font-semibold">
-                  **** **** 5667
+                  {hiddenNumber}
                 </p>
-                <p className="p-1 text-white text-center text-sm font-serif">
+                <p className="p-1 text-white text-center text-sm font-sans">
                   Invested Value
                 </p>
                 <p className="p-1 text-white text-center text-2xl font-semibold">
-                  50.000
+                  50,000
                 </p>
               </div>
             </div>
@@ -52,6 +55,7 @@ export default function Dashboard() {
               <tr>
                 <th className="text-start pl-1">Date</th>
                 <th className="text-center">Scheme</th>
+                <th className="text-center">Trader</th>
                 <th className="text-end pr-1">Amount</th>
               </tr>
             </thead>
@@ -61,6 +65,7 @@ export default function Dashboard() {
                 <td className="text-center">
                   Affa Ethical Fund Regular Plan Growth
                 </td>
+                <td>Junair</td>
                 <td className="text-green-700 text-end pr-1">15000.00</td>
               </tr>
 
@@ -69,6 +74,7 @@ export default function Dashboard() {
                 <td className="text-center">
                   Affa Ethical Fund Regular Plan Growth
                 </td>
+                <td>Junair</td>
                 <td className="text-green-700 text-end pr-1">15000.00</td>
               </tr>
               <tr>
@@ -76,6 +82,7 @@ export default function Dashboard() {
                 <td className="text-center">
                   Affa Ethical Fund Regular Plan Growth
                 </td>
+                <td>Junair</td>
                 <td className="text-green-700 text-end pr-1">15000.00</td>
               </tr>
               <tr>
@@ -83,6 +90,7 @@ export default function Dashboard() {
                 <td className="text-center">
                   Affa Ethical Fund Regular Plan Growth
                 </td>
+                <td>Junair</td>
                 <td className="text-green-700 text-end pr-1">15000.00</td>
               </tr>
               <tr>
@@ -90,6 +98,7 @@ export default function Dashboard() {
                 <td className="text-center">
                   Affa Ethical Fund Regular Plan Growth
                 </td>
+                <td>Junair</td>
                 <td className="text-green-700 text-end pr-1">15000.00</td>
               </tr>
               <tr>
@@ -97,6 +106,7 @@ export default function Dashboard() {
                 <td className="text-center">
                   Affa Ethical Fund Regular Plan Growth
                 </td>
+                <td>Junair</td>
                 <td className="text-green-700 text-end pr-1">15000.00</td>
               </tr>
               <tr>
@@ -104,6 +114,7 @@ export default function Dashboard() {
                 <td className="text-center">
                   Affa Ethical Fund Regular Plan Growth
                 </td>
+                <td>Junair</td>
                 <td className="text-green-700 text-end pr-1">15000.00</td>
               </tr>
               <tr>
@@ -111,6 +122,7 @@ export default function Dashboard() {
                 <td className="text-center">
                   Affa Ethical Fund Regular Plan Growth
                 </td>
+                <td>Junair</td>
                 <td className="text-green-700 text-end pr-1">15000.00</td>
               </tr>
               <tr>
@@ -118,6 +130,7 @@ export default function Dashboard() {
                 <td className="text-center">
                   Affa Ethical Fund Regular Plan Growth
                 </td>
+                <td>Junair</td>
                 <td className="text-green-700 text-end pr-1">15000.00</td>
               </tr>
               <tr>
@@ -125,15 +138,11 @@ export default function Dashboard() {
                 <td className="text-center">
                   Affa Ethical Fund Regular Plan Growth
                 </td>
+                <td>Junair</td>
                 <td className="text-green-700 text-end pr-1">15000.00</td>
               </tr>
-              <tr>
-                <td className="w-[100px] text-start pl-1">Dec-14,2024</td>
-                <td className="text-center">
-                  Affa Ethical Fund Regular Plan Growth
-                </td>
-                <td className="text-green-700 text-end pr-1">15000.00</td>
-              </tr>
+
+
             </tbody>
           </table>
         </div>
